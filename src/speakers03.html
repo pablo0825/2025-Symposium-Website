@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Lim Chong Jin</title>
+    <!--web seo-->
+    <link rel="icon" href="/img/webLogo/web_icon.png" type="image/x-icon" />
+    <meta
+      name="description"
+      content="歡迎參加 ICIDD 2025，探索設計、科技與創新的未來。"
+    />
+    <meta name="keywords" content="ICIDD, 2025, 數位設計, 科技, 藝術" />
+    <!-- Open Graph 協議 -->
+    <meta property="og:title" content="ICIDD 2025 - 創新數位設計國際研討會" />
+    <meta
+      property="og:description"
+      content="歡迎參加 ICIDD 2025，探索設計、科技與創新的未來。"
+    />
+    <meta property="og:image" content="/img/webLogo/web_seo.png" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:type" content="website" />
+    <!--css-->
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--navigation-->
+    <header id="main-menu">
+      <div class="max-w-7xl mx-auto px-6">
+        <!--container-->
+        <div class="flex items-center justify-between py-4">
+          <!--web logo-->
+          <div>
+            <a href="index.html">
+              <img
+                src="/img/webLogo/web_logo.png"
+                alt="ICIDD 2024研討會"
+                border="0"
+                class="h-8"
+              />
+            </a>
+          </div>
+          <!--menu-->
+          <nav class="space-x-4 hidden md:flex">
+            <!--about-->
+            <div class="group relative p-2">
+              <!--itme-->
+              <div class="flex space-x-2">
+                <a
+                  href="about.html"
+                  class="text-content font-sans group-hover:text-stress"
+                  >關於</a
+                >
+                <div class="group">
+                  <i
+                    class="fa-solid fa-angle-down text-content group-hover:text-stress transition-transform duration-300"
+                  ></i>
+                </div>
+              </div>
+              <!--drop down menu-->
+              <div
+                class="hidden absolute right-0 mt-3 group-hover:block w-48 rounded-3xl bg-downmenubg shadow-2xl"
+              >
+                <ul class="p-4 space-y-2">
+                  <li>
+                    <a
+                      href="about.html"
+                      class="block px-4 py-2 hover:bg-[#353641] hover:rounded-xl hover:text-white"
+                      >關於 ICIDD 2024</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="organizing.html"
+                      class="block px-4 py-2 hover:bg-[#353641] hover:rounded-xl hover:text-white"
+                      >組織委員會</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--speaker-->
+            <div class="group relative p-2">
+              <!--itme-->
+              <div class="flex space-x-2">
+                <a
+                  href="speakers01.html"
+                  class="text-content font-sans group-hover:text-stress"
+                  >專題講者</a
+                >
+                <div class="group">
+                  <i
+                    class="fa-solid fa-angle-down text-content group-hover:text-stress transition-transform duration-300"
+                  ></i>
+                </div>
+              </div>
+              <!--drop down menu-->
+              <div
+                class="hidden absolute right-0 mt-3 group-hover:block rounded-3xl bg-downmenubg w-48 shadow-2xl"
+              >
+                <ul class="p-4 space-y-2">
+                  <li>
+                    <a
+                      href="speakers01.html"
+                      class="block px-4 py-2 hover:bg-[#353641] hover:rounded-xl hover:text-white"
+                      >Aloysius Yapp</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="speakers02.html"
+                      class="block px-4 py-2 hover:bg-[#353641] hover:rounded-xl hover:text-white"
+                      >Janaka Rajapakse</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="speakers02.html"
+                      class="block px-4 py-2 hover:bg-[#353641] hover:rounded-xl hover:text-white"
+                      >Lim Chong Jin</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Call For Paper-->
+            <div class="group relative p-2">
+              <div class="flex space-x-2">
+                <a
+                  href="submission.html"
+                  class="text-content font-sans group-hover:text-stress"
+                  >論文徵稿</a
+                >
+                <!--            <div class="group">
+                  <i class="fa-solid fa-angle-down text-content group-hover:text-stress transition-transform duration-300"></i>
+                </div> -->
+              </div>
+              <!--drop down menu-->
+              <!--          <div
+                class="hidden absolute right-0 mt-3 group-hover:block bg-white border border-gray-200 w-48 "
+              >
+                <ul class="p-4 space-y-2">
+                  <li>
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100"
+                      >投稿主題</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100"
+                      >重要時程
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100"
+                      >論文投稿
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+          </nav>
+          <!--moblie-->
+          <button
+            class="mobile-menu-button md:hidden text-content hover:text-stress focus:outline-none focus:ring-2 focus:ring-gray-400"
+          >
+            <i class="menu-icon fa-solid fa-bars fa-xl"></i>
+            <i class="close-icon fa-solid fa-xmark fa-xl hidden"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <nav
+        class="mobile-menu hidden md:hidden bg-downmenubg absolute top-16 left-0 w-full h-screen"
+      >
+        <ul class="flex flex-col space-y-6 py-6 px-6">
+          <!-- about -->
+          <li class="group">
+            <button
+              class="flex justify-between items-center w-full"
+              data-toggle="about-menu"
+            >
+              <span
+                class="text-xl font-bold text-content group-hover:text-stress"
+                >關於</span
+              >
+              <i
+                class="fa-solid fa-angle-down fa-xl text-content group-hover:text-stress transform transition-transform"
+              ></i>
+            </button>
+            <!--sub menu-->
+            <ul id="about-menu" class="hidden space-y-4 pl-4 pt-4">
+              <li>
+                <a
+                  href="about.html"
+                  class="block text-content hover:text-stress"
+                  >關於 ICIDD 2024</a
+                >
+              </li>
+              <li>
+                <a
+                  href="organizing.html"
+                  class="block text-content hover:text-stress"
+                  >組織委員會</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- speaker -->
+          <li class="group">
+            <button
+              class="flex justify-between items-center w-full"
+              data-toggle="speaker-menu"
+            >
+              <span
+                class="text-xl font-bold text-content group-hover:text-stress"
+                >專題講者</span
+              >
+              <i
+                class="fa-solid fa-angle-down fa-xl text-content group-hover:text-stress transform transition-transform"
+              ></i>
+            </button>
+            <!--sub menu-->
+            <ul id="speaker-menu" class="hidden space-y-4 pl-4 pt-4">
+              <li>
+                <a
+                  href="speakers01.html"
+                  class="block text-content hover:text-stress"
+                  >Aloysius Yapp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="speakers02.html"
+                  class="block text-content hover:text-stress"
+                  >Janaka Rajapakse</a
+                >
+              </li>
+              <li>
+                <a
+                  href="speakers03.html"
+                  class="block text-content hover:text-stress"
+                  >Lim Chong Jin</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Call for Papers -->
+          <li class="group">
+            <button
+              class="flex justify-between items-center w-full"
+              data-toggle="papers-menu"
+            >
+              <span
+                class="text-xl font-bold text-content group-hover:text-stress"
+              >
+                <a href="submission.html">論文徵稿</a>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--fixed menu-->
+    <div
+      id="sticky-menu"
+      class="fixed top-0 left-0 w-full bg-[#161823] hidden z-50 border- border-b-2 border-main"
+    >
+      <!--menu-->
+      <div class="max-w-7xl mx-auto px-6">
+        <!--container-->
+        <div class="flex items-center justify-between py-4">
+          <!--web logo-->
+          <div>
+            <a href="index.html">
+              <img
+                src="/img/webLogo/web_logo.png"
+                alt="ICIDD 2024研討會"
+                border="0"
+                class="h-8"
+              />
+            </a>
+          </div>
+          <!--menu-->
+          <nav class="space-x-4 hidden md:flex">
+            <!--about-->
+            <div class="group relative p-2">
+              <!--itme-->
+              <div class="flex space-x-2">
+                <a
+                  href="/about"
+                  class="text-content font-sans group-hover:text-stress"
+                  >關於</a
+                >
+                <div class="group">
+                  <i
+                    class="fa-solid fa-angle-down text-content group-hover:text-stress transition-transform duration-300"
+                  ></i>
+                </div>
+              </div>
+              <!--drop down menu-->
+              <div
+                class="hidden absolute right-0 mt-3 group-hover:block rounded-3xl bg-downmenubg shadow-2xl w-48"
+              >
+                <ul class="p-4 space-y-2">
+                  <li>
+                    <a
+                      href="/about"
+                      class="block px-4 py-2 hover:bg-[#353641] hover:rounded-xl hover:text-white"
+                      >關於 ICIDD 2024</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="organizing.html"
+                      class="block px-4 py-2 hover:bg-[#353641] hover:rounded-xl hover:text-white"
+                      >組織委員會</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--speaker-->
+            <div class="group relative p-2">
+              <!--itme-->
+              <div class="flex space-x-2">
+                <a
+                  href="speakers01.html"
+                  class="text-content font-sans group-hover:text-stress"
+                  >專題講者</a
+                >
+                <div class="group">
+                  <i
+                    class="fa-solid fa-angle-down text-content group-hover:text-stress transition-transform duration-300"
+                  ></i>
+                </div>
+              </div>
+              <!--drop down menu-->
+              <div
+                class="hidden absolute right-0 mt-3 group-hover:block rounded-3xl bg-downmenubg shadow-2xl w-48"
+              >
+                <ul class="p-4 space-y-2">
+                  <li>
+                    <a
+                      href="speakers01.html"
+                      class="block px-4 py-2 hover:bg-[#353641] hover:rounded-xl hover:text-white"
+                      >Aloysius Yapp</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="speakers02.html"
+                      class="block px-4 py-2 hover:bg-[#353641] hover:rounded-xl hover:text-white"
+                      >Janaka Rajapakse</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="speakers03.html"
+                      class="block px-4 py-2 hover:bg-[#353641] hover:rounded-xl hover:text-white"
+                      >Lim Chong Jin</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Call For Paper-->
+            <div class="group relative p-2">
+              <div class="flex space-x-2">
+                <a
+                  href="submission.html"
+                  class="text-content font-sans group-hover:text-stress"
+                  >論文徵稿</a
+                >
+                <!--            <div class="group">
+                  <i class="fa-solid fa-angle-down text-content group-hover:text-stress transition-transform duration-300"></i>
+                </div> -->
+              </div>
+              <!--drop down menu-->
+              <!--          <div
+                class="hidden absolute right-0 mt-3 group-hover:block bg-white border border-gray-200 w-48 "
+              >
+                <ul class="p-4 space-y-2">
+                  <li>
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100"
+                      >投稿主題</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100"
+                      >重要時程
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100"
+                      >論文投稿
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+          </nav>
+          <!--moblie-->
+          <button
+            class="mobile-menu-button md:hidden text-content hover:text-stress focus:outline-none focus:ring-2 focus:ring-gray-400"
+          >
+            <i class="menu-icon fa-solid fa-bars fa-xl"></i>
+            <i class="close-icon fa-solid fa-xmark fa-xl hidden"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <main>
+      <!--other hero-->
+      <section id="other-hero">
+        <div class="max-w-7xl mx-auto px-10">
+          <!--container-->
+          <div
+            class="flex flex-col items-center justify-center pt-32 space-y-6"
+          >
+            <!--title-->
+            <h2>Lim Chong Jin</h2>
+            <!--Breadcrumbs-->
+            <div class="breadcrumbs text-sm text-gray-600">
+              <ul class="flex space-x-2">
+                <li>
+                  <a href="/" class="text-content hover:underline">首頁</a>
+                </li>
+                <li>/</li>
+                <li>
+                  <a href="/speakers01" class="text-content hover:underline"
+                    >專題講者</a
+                  >
+                </li>
+                <li>/</li>
+                <li class="text-content">Lim Chong Jin</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--about-->
+      <section>
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col py-24 space-y-12">
+            <!--speaker-->
+            <div class="flex flex-col md:flex-row gap-12">
+              <img
+                src="/img/speakers/Lim Chong Jin.png"
+                alt="Masahiko Murakami"
+                class="md:h-80"
+              />
+              <!---->
+              <div class="space-y-4">
+                <h3>Lim Chong Jin</h3>
+                <p>Director Adplanet Group</p>
+                <p>
+                  A Singaporean, born and bred, Lim Chong Jin received his
+                  design education in Canada. Jin is a veteran in both private
+                  and public sectors, having collectively amassed 4 decades of
+                  experience in design communication, education, change
+                  management, leadership, and creativity training.
+                </p>
+                <p>
+                  As the former director at the School of Design Temasek
+                  Polytechnic (TP), Jin dwelled in the possibilities of
+                  collaborative energy and sagacity. In a familiar space
+                  surrounded by an immensity of talents, Jin is reminded of his
+                  formative years in advertising where he held both creative and
+                  executive tenures, spearheading award-winning works across a
+                  roster of brands.
+                </p>
+                <p>
+                  At the intersection of practice and academia, the fluidity in
+                  creativity allows Jin to transit, reside, fuse, and collide
+                  into a dialectical world of what it is and what it can be.
+                  Besides his previous responsibilities in running the multiple
+                  award-winning school, Jin provided the creative impetus as the
+                  Head of the BeyonDesign Centre.
+                </p>
+                <p>
+                  Attesting to the strong academic rigor and the deep pool of
+                  creative talent, Jin’s proudest moment is the claim that TP is
+                  the only design institution that has engendered 5 graduates
+                  who are recipients of President’s Design Award’s Designer of
+                  the Year, the highest design accolade in the design industry.
+                  Adding another feather to the cap, the school was crowned the
+                  “Design Institution of the Year 2023” again, for the seven
+                  consecutive years since 2017.
+                </p>
+              </div>
+            </div>
+            <!--divider-->
+            <div class="border"></div>
+            <!--agenda-->
+            <div class="flex flex-col space-y-4">
+              <h3>Janaka Rajapakse的議程</h3>
+              <p>待更新</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--unit-->
+      <section id="unit" class="bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <!--container-->
+          <div
+            class="flex flex-col justify-between px-0 py-12 space-y-12 md:flex-row md:items-baseline md:p-6 md:space-y-0"
+          >
+            <!--itme 1-->
+            <div class="">
+              <h4 class="pb-2 font-sans font-bold">指導單位</h4>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="/img/unit_logo/教育部.png" alt="教育部" />
+              </a>
+            </div>
+            <!--itme 2-->
+            <div class="space-y-2">
+              <h4 class="font-sans font-bold">主辦單位</h4>
+              <div
+                class="flex flex-col space-y-4 lg:space-x-4 lg:flex-row lg:space-y-0"
+              >
+                <a
+                  href="https://www.stust.edu.tw/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/img/unit_logo/南臺科技大學.png"
+                    alt="南臺科技大學"
+                    class="w-60"
+                  />
+                </a>
+                <a
+                  href="https://cdd.stust.edu.tw/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/img/unit_logo/南臺科技大學_數位設計學院.png"
+                    alt="南臺科技大學_數位設計學院"
+                    class="w-60"
+                  />
+                </a>
+              </div>
+            </div>
+            <!--itme 3-->
+            <div class="">
+              <h4 class="pb-2 font-sans font-bold">指導單位</h4>
+              <a
+                href="https://ic.stust.edu.tw/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/img/unit_logo/資傳系Logo.png"
+                  alt="教育部"
+                  class="w-48"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!---->
+    <footer>
+      <div class="max-w-7xl mx-auto px-6">
+        <!--container-->
+        <div class="flex flex-col py-6 space-y-6">
+          <!--top-->
+          <div
+            class="flex flex-row flex-wrap items-center justify-between gap-6"
+          >
+            <!--address-->
+            <div>
+              <h5 class="text-content font-bold">地址</h5>
+              <p>71005 台南市永康區南台街一號W804</p>
+            </div>
+            <!--telephone-->
+            <div>
+              <h5 class="text-content font-bold">電話</h5>
+              <p>06-253-3131 #7101</p>
+            </div>
+            <!--email-->
+            <div>
+              <h5 class="text-content font-bold">Email</h5>
+              <a href="">
+                <p>2025icidd@gmail.com</p>
+              </a>
+            </div>
+          </div>
+          <!--divider-->
+          <div class="border border-content"></div>
+          <p>
+            &copy; 2025 College of Digital Design, STUST All rights reserved. ｜
+            <a href="">Web Design : pablo0825</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--js-->
+    <script src="app.js"></script>
+  </body>
+</html>

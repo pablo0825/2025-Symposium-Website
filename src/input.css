@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #161823;
+  color: #8e8f94;
+}
+
+h2 {
+  @apply text-main text-3xl font-bold md:text-4xl;
+}
+
+h3 {
+  @apply text-content text-2xl font-bold lg:text-3xl;
+}
+
+p {
+  @apply text-content text-base;
+}
+
+.list-container {
+  @apply flex flex-col w-full md:w-1/3 space-y-6 px-6 pt-6 pb-8 bg-listbg rounded-3xl;
+}
+
+.countdown-container {
+  @apply text-white p-2 flex flex-col items-center w-32 bg-listbg rounded-2xl space-y-2 md:space-y-4 md:p-4 md:rounded-3xl shadow-2xl hover:-translate-y-4 duration-200;
+}
+
+.list-style {
+  @apply list-inside list-disc [text-indent:-1.5rem] pl-6 text-content text-base;
+}
+
+#hero {
+  width: 100%;
+  height: 900px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("/img/web_home_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#other-hero {
+  width: 100%;
+  height: 360px;
+  background-image: linear-gradient(rgba(22, 24, 35, 0.5), rgba(22, 24, 35, 1)),
+    url("/img/web_other_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 576px) {
+  #hero {
+    width: 100%;
+    height: 672px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+      url("/img/web_home_banner.png");
+  }
+}
+
+#countdown {
+  width: 100%;
+  height: 320px;
+  background: linear-gradient(rgba(22, 24, 35, 0.5), rgba(22, 24, 35, 1)),
+    url("/img/web_other_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.group:hover .fa-angle-down {
+  transform: rotate(180deg);
+  transform-origin: center; /* 確保旋轉基點為正中心 */
+}
+
+/* 初始狀態 */
+.original-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+.new-content {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* 滑動效果 */
+.hover\:bg-green-500:hover .original-content {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.hover\:bg-green-500:hover .new-content {
+  transform: translateY(0);
+  opacity: 1;
+}
