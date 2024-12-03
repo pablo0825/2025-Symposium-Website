@@ -82,7 +82,7 @@ p {
   background-position: center;
 }
 
-.group:hover .fa-angle-down {
+.group:hover .lucide-chevron-down {
   transform: rotate(180deg);
   transform-origin: center; /* 確保旋轉基點為正中心 */
 }

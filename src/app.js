@@ -64,7 +64,7 @@ toggleButtons.forEach((button) => {
     const menuId = button.getAttribute("data-toggle");
     const subMenu = document.getElementById(menuId);
 
-    const arrowIcon = button.querySelector("i");
+    const arrowIcon = button.querySelector("svg");
 
     // Toggle submenu display
     subMenu.classList.toggle("hidden");

@@ -960,6 +960,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -980,13 +985,13 @@ video {
   line-height: 1.75rem;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .text-content {
@@ -1320,7 +1325,7 @@ p {
   background-position: center;
 }
 
-.group:hover .fa-angle-down {
+.group:hover .lucide-chevron-down {
   transform: rotate(180deg);
   transform-origin: center;
   /* 確保旋轉基點為正中心 */
