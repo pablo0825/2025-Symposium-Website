@@ -424,97 +424,18 @@
     </div>
     <!---->
     <main>
-      <!--other hero-->
-      <section id="other-hero">
-        <div class="max-w-7xl mx-auto px-10">
-          <!--container-->
-          <div
-            class="flex flex-col items-center justify-center pt-32 space-y-6"
-          >
-            <!--title-->
-            <h2>組織委員會</h2>
-            <!--Breadcrumbs-->
-            <div class="breadcrumbs text-sm text-gray-600">
-              <ul class="flex space-x-2">
-                <li>
-                  <a href="index.html" class="text-content hover:underline"
-                    >首頁</a
-                  >
-                </li>
-                <li>/</li>
-                <li>
-                  <a href="about.html" class="text-content hover:underline"
-                    >關於</a
-                  >
-                </li>
-                <li>/</li>
-                <li class="text-content">組織委員會</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--content-->
+      <!--404-->
       <section>
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="flex flex-col py-24 space-y-12">
-            <!--item1-->
-            <div class="space-y-4">
-              <h4 class="text-main text-xl">主任委員</h4>
-              <p>黃能富校長</p>
-            </div>
-            <!--item2-->
-            <div class="space-y-4">
-              <h4 class="text-main text-xl">指導委員</h4>
-              <p>數位設計學院 陳炳彰院長</p>
-              <p>數位設計學院 孫志誠副院長</p>
-            </div>
-            <!--item3-->
-            <div class="space-y-4">
-              <h4 class="text-main text-xl">籌備委員</h4>
-              <p>梁丹青</p>
-              <p>許擇瑋</p>
-              <p>洪士傑</p>
-              <p>葉禾田</p>
-              <p>劉以琳</p>
-              <p>鄭靜怡</p>
-              <p>梁丹青</p>
-              <p>楊斯嵐</p>
-              <p>盧祐德</p>
-              <p>黃瓊儀</p>
-              <p>鄭祿平</p>
-            </div>
-            <!--item4-->
-            <div class="space-y-4">
-              <h4 class="text-main text-xl">諮詢委員</h4>
-              <p>視覺傳達系 黃綝怡主任</p>
-              <p>創新產品設計系 程筑鈺主任</p>
-              <p>流行音樂產業系 陳慧如主任</p>
-              <p>多媒體與電腦娛樂科學系 黃永銘主任</p>
-            </div>
-            <!--item5-->
-            <div class="space-y-4">
-              <h4 class="text-main text-xl">論文審查委員</h4>
-              <p>召集人 梁丹青</p>
-              <p>國立成功大學 工業設計學系 林彥呈</p>
-              <p>國立高雄大學 經營管理研究所 吳毓麒</p>
-              <p>國立雲林科技大學 工業設計系 黃信夫</p>
-              <p>國立雲林科技大學 設計學研究所 黃瑞菘</p>
-              <p>國立臺中科技大學 語文學院 蒲盈宏</p>
-              <p>華夏科技大學 數位媒體設計系 鄔文杰</p>
-              <p>健行科技大學 數位多媒體設計系 周昌民</p>
-              <p>健行科技大學 數位多媒體設計系 洪瑞文</p>
-              <p>致理科技大學 數位媒體設計系 黃淑芬</p>
-              <p>致理科技大學 行銷與流通管理系 李銘尉</p>
-              <p>中原大學 商業設計學系 黃哲盛</p>
-              <p>中國科技大學 視覺傳達設計系 黃致倫</p>
-            </div>
-            <!--item6-->
-            <div class="space-y-4">
-              <h4 class="text-main text-xl">行政團隊</h4>
-              <p>待更新</p>
-            </div>
-          </div>
+        <div
+          class="flex flex-col items-center justify-center h-screen space-y-6"
+        >
+          <h2 class="text-9xl">404</h2>
+          <p>很抱歉，這個頁面不存在！</p>
+          <p>
+            您在
+            <span id="countdown" class="text-main">5</span>秒後將回到首頁
+          </p>
+          <a href="index.html" class="text-main underline">返回首頁</a>
         </div>
       </section>
       <!--unit-->
@@ -617,6 +538,25 @@
       </div>
     </footer>
     <!--js-->
+    <script>
+      // 倒數秒數
+      let countdown = 5;
+
+      function updateCountdown() {
+        const countdownElement = document.getElementById("countdown");
+        countdownElement.textContent = countdown;
+
+        // 如果倒數結束，跳轉到首頁
+        if (countdown <= 0) {
+          window.location.href = "/index.html"; // 修改為您的首頁路徑
+        } else {
+          countdown--;
+        }
+      }
+
+      // 每秒更新一次倒數
+      setInterval(updateCountdown, 1000);
+    </script>
     <script src="/src/app.js"></script>
   </body>
 </html>

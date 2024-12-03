@@ -12,7 +12,7 @@ h2 {
 }
 
 h3 {
-  @apply text-content text-2xl font-bold lg:text-3xl;
+  @apply text-content text-2xl font-bold lg:text-[1.75rem];
 }
 
 p {
@@ -29,6 +29,18 @@ p {
 
 .list-style {
   @apply list-inside list-disc [text-indent:-1.5rem] pl-6 text-content text-base;
+}
+
+.speaker-mask {
+  @apply hidden absolute duration-200 bottom-0 right-0 left-0 w-auto h-24 bg-main group-hover:block md:h-16 lg:h-[5rem] xl:h-[6rem];
+}
+
+.speaker-name {
+  @apply absolute duration-200 left-6 bottom-4 text-main group-hover:-translate-y-8 group-hover:text-white md:left-4 md:group-hover:-translate-y-3 lg:group-hover:-translate-y-6 xl:group-hover:-translate-y-8 xl:left-6;
+}
+
+.speaker-job-title {
+  @apply hidden absolute duration-200 left-6 bottom-6 right-1 group-hover:block text-white leading-4 md:left-4 md:text-[0.625rem] md:bottom-3 lg:text-base xl:bottom-4 xl:left-6;
 }
 
 #hero {
